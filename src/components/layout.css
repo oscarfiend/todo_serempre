@@ -1,16 +1,19 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
+  font: 112.5%/1.45em 'PT Sans',georgia, serif, sans-serif;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  /* background: #f2f2f2; */
+  height: 400px;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'PT sans',georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -19,6 +22,32 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+*{
+  font-size: calc(1rem + 0.2vw);
+}
+
+input:focus{
+  border:none;
+  outline: 0;
+}
+
+button{
+  white-space:nowrap;
+}
+
+h1 {
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: calc(2rem + 0.5vw);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
 article,
 aside,
 details,
@@ -71,23 +100,7 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
-}
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -595,3 +608,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.bg-teal { background-color: #2c7a7b; }
+
+.text-teal { color: #2c7a7b; }
+
+.border-teal{ border: 2px solid #2c7a7b; }
