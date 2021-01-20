@@ -25,3 +25,12 @@ export const deleteTask=id=>({
     type:todo.delete_task,
     payload:id
 })
+
+export const cleanData=()=>({
+    type:todo.clean_data
+})
+
+export const setCordinate=cordinate=>({
+    type:todo.set_cordinate,
+    payload:cordinate
+})

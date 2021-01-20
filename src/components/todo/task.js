@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { selectTask,changeState,deleteTask } from "../redux/actions/todoActions"
+import { selectTask,changeState,deleteTask } from "../../redux/actions/todoActions"
 import { useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 
 const Task = ({task}) => {
 
 const dispatch = useDispatch()
-
 
 // change el state of one task
 const handleState=()=>{
@@ -18,6 +18,7 @@ const handleSelect=()=>{
     dispatch(selectTask(task))
 }
 
+//delete one task selected
 const handleDelete=()=>{
     dispatch(deleteTask(task.id))
 }

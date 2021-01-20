@@ -9,11 +9,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
       >
         <Helmet>
           <title>TODO Serempre</title>
@@ -22,10 +17,10 @@ const Layout = ({ children }) => {
             href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap"
             rel="stylesheet"
           />
-          <link
+          {/* <link
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
             rel="stylesheet"
-          />
+          /> */}
           <script src="https://use.fontawesome.com/acb61ac0c8.js"></script>
           <link
             rel="stylesheet"

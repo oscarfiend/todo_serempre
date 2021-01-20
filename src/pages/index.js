@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import  TodoList  from "../components/todoList"
+import Layout from "../components/ui/layout"
+import  TodoList  from "../components/todo/todoList"
 
 const IndexPage = () => (
   <Layout>

@@ -1,14 +1,16 @@
 import React from "react"
+import MapComponent from "../components/map/mapComponent"
+import { useSelector } from "react-redux"
 
-import Layout from "../components/layout"
+import Layout from "../components/ui/layout"
 
-const SecondPage = () => (
+export const SecondPage = () => {
+  const { tasks } = useSelector(state => state.todos)
+  return(
   <Layout>
-    <h1>scroll</h1>
-    <h1>scroll</h1>
-    <h1>scroll</h1>
-    <h1>scroll</h1>
+    <MapComponent tasks={tasks}/>
   </Layout>
-)
+  )
+  }
 
 export default SecondPage
